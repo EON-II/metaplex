@@ -1,0 +1,35 @@
+{
+    "name": "Surrealism#0002",
+    "symbol": "",
+    "description": "A journey through time in art",
+    "seller_fee_basis_points": 300,
+    "image": "image.png",
+    "animation_url": "",
+    "external_url": "",
+    "attributes": [
+      {
+        "trait_type": "Surrealism",
+        "value": "yes"
+      }
+     
+    ],
+    "collection": {
+       "name": "Surrealism",
+       "family": "Temporal" 
+    },
+    "properties": {
+      "files": [
+        {
+          "uri": "image.png",
+          "type": "image/png"
+        }
+      ],
+      "category": "image",
+      "creators": [
+        {
+          "address": "3P5CebgYFpW1w2S6Z3uqd8RBEcHzk1ZZ28C89drF19af",
+          "share": 100
+        }
+      ]
+    }
+  }
