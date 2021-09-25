@@ -1,21 +1,20 @@
 {
-    "name": "Surrealism#0003",
+    "name": "Temporal 2",
     "symbol": "",
-    "description": "A journey through time in art",
-    "seller_fee_basis_points": 300,
+    "description": "Developed by our customized styleGAN algorithm, Temporal is a collection filled with artistic diversity throughout the eras of time",
+    "seller_fee_basis_points": 500,
     "image": "image.png",
     "animation_url": "",
     "external_url": "",
     "attributes": [
       {
-        "trait_type": "Surrealism",
-        "value": "yes"
+        "trait_type": "Art Style",
+        "value": "Impressionism"
       }
-     
     ],
     "collection": {
-       "name": "Surrealism",
-       "family": "Temporal" 
+       "name": "Temporal",
+       "family": "" 
     },
     "properties": {
       "files": [
@@ -27,7 +26,7 @@
       "category": "image",
       "creators": [
         {
-          "address": "3P5CebgYFpW1w2S6Z3uqd8RBEcHzk1ZZ28C89drF19af",
+          "address": "5JdCgLyp9JnNwhqke3Z1jAH4tMLRxfs7Ne5wtqiqAYMd",
           "share": 100
         }
       ]
