@@ -1,7 +1,9 @@
 {
     "program": {
         "uuid": "31doCR",
-        "config": "31doCRTkxonKUE9bY9VEJhc48uReE3pTSP4aZRmENBR5"
+        "config": "31doCRTkxonKUE9bY9VEJhc48uReE3pTSP4aZRmENBR5",
+        "candy machine pubkey": "G1wAjtWPug7PfLNJbFtHvwGnskkQ1VJceDPzpaetcqjA",
+        "startDate timestamp": "1632783600"
     },
     "items": {
         "0": {
