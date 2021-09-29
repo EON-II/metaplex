@@ -1,0 +1,34 @@
+{
+    "name": "Temporal 69",
+    "symbol": "",
+    "description": "1/3 limited edition chinese art",
+    "seller_fee_basis_points": 500,
+    "image": "image.png",
+    "animation_url": "",
+    "external_url": "",
+    "attributes": [
+      {
+        "trait_type": "Art Style",
+        "value": "Impressionism"
+      }
+    ],
+    "collection": {
+       "name": "Temporal",
+       "family": "" 
+    },
+    "properties": {
+      "files": [
+        {
+          "uri": "image.png",
+          "type": "image/png"
+        }
+      ],
+      "category": "image",
+      "creators": [
+        {
+          "address": "D3vzYim24HyG422mT3oV4TFQhy4VJx15peaa6a8VhwLo",
+          "share": 100
+        }
+      ]
+    }
+  }

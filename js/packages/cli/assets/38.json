@@ -1,5 +1,5 @@
 {
-    "name": "Temporal 38",
+    "name": "Temporal 41",
     "symbol": "",
     "description": "Developed by our customized styleGAN algorithm, Temporal is a collection filled with artistic diversity throughout the eras of time",
     "seller_fee_basis_points": 500,
@@ -26,7 +26,7 @@
       "category": "image",
       "creators": [
         {
-          "address": "5JdCgLyp9JnNwhqke3Z1jAH4tMLRxfs7Ne5wtqiqAYMd",
+          "address": "D3vzYim24HyG422mT3oV4TFQhy4VJx15peaa6a8VhwLo",
           "share": 100
         }
       ]

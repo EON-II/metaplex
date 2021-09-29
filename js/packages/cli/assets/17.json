@@ -1,0 +1,34 @@
+{
+    "name": "Temporal 19",
+    "symbol": "",
+    "description": "Developed by our customized styleGAN algorithm, Temporal is a collection filled with artistic diversity throughout the eras of time",
+    "seller_fee_basis_points": 500,
+    "image": "image.png",
+    "animation_url": "",
+    "external_url": "",
+    "attributes": [
+      {
+        "trait_type": "Art Style",
+        "value": "Impressionism"
+      }
+    ],
+    "collection": {
+       "name": "Temporal",
+       "family": "" 
+    },
+    "properties": {
+      "files": [
+        {
+          "uri": "image.png",
+          "type": "image/png"
+        }
+      ],
+      "category": "image",
+      "creators": [
+        {
+          "address": "D3vzYim24HyG422mT3oV4TFQhy4VJx15peaa6a8VhwLo",
+          "share": 100
+        }
+      ]
+    }
+  }
