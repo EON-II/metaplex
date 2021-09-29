@@ -1,0 +1,30 @@
+{
+    "program": {
+        "uuid": "31doCR",
+        "config": "31doCRTkxonKUE9bY9VEJhc48uReE3pTSP4aZRmENBR5",
+        "candy machine pubkey": "G1wAjtWPug7PfLNJbFtHvwGnskkQ1VJceDPzpaetcqjA",
+        "startDate timestamp": "1632783600"
+    },
+    "items": {
+        "0": {
+            "link": "https://arweave.net/Z9GwM4ySd7s2b-UpWcFQddZ0Kq6krVPF2BgfbwcfAYw",
+            "name": "Temporal 0",
+            "onChain": true
+        },
+        "1": {
+            "link": "https://arweave.net/rd16QjJx-zMJ3eegH3lIi1ZgEWXloeUj0Ws2W0zm3OY",
+            "name": "Temporal 1",
+            "onChain": true
+        },
+        "38": {
+            "link": "https://arweave.net/XJc0XgqAg5AhKxYvEJulHi4bSGKpmtra7BPF9h8v1g0",
+            "name": "Temporal 38",
+            "onChain": true
+        },
+        "86": {
+            "link": "https://arweave.net/I8czpi6D5aUu6hHBG8YpNPOShv_hhXZG0cmys2tCkPM",
+            "name": "Temporal 86",
+            "onChain": true
+        }
+    }
+}
