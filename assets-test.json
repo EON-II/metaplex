@@ -2,7 +2,8 @@
     "program": {
         "uuid": "3ne4pe",
         "config": "3ne4pe8sgv6waUWWBoR6iHfsCknS17up6B4ab8LCdecV",
-        "candy machine pubkey": "7YGwjuAWTvSWtMYKuWXuD8TSj5JmVybnU4JBP6DeoNkA"
+        "candy machine pubkey": "7YGwjuAWTvSWtMYKuWXuD8TSj5JmVybnU4JBP6DeoNkA",
+        "startDate timestamp": "1633186680"
     },
     "items": {
         "0": {
