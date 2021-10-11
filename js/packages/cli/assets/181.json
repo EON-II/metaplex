@@ -1,7 +1,7 @@
 {
-    "name": "Temporal 185",
+    "name": "Temporal 382",
     "symbol": "",
-    "description": "Developed by our customized styleGAN algorithm, Temporal is a collection filled with artistic diversity throughout the eras of time",
+    "description": "Developed by our customized styleGAN algorithm, Temporal is a collection filled with artistic diversity throughout the eras of time.",
     "seller_fee_basis_points": 500,
     "image": "image.png",
     "animation_url": "",
@@ -9,7 +9,7 @@
     "attributes": [
       {
         "trait_type": "Art Style",
-        "value": "Impressionism"
+        "value": "Surrealism"
       }
     ],
     "collection": {
@@ -26,7 +26,7 @@
       "category": "image",
       "creators": [
         {
-          "address": "D3vzYim24HyG422mT3oV4TFQhy4VJx15peaa6a8VhwLo",
+          "address": "CqNxFgMn1n5cjg7HHgLXycUTPMw9GmB9owRjkKVtgYDa",
           "share": 100
         }
       ]
