@@ -1,0 +1,30 @@
+{
+    "name": "SpacePepesSOL #1",
+    "symbol": "",
+    "description": "",
+    "seller_fee_basis_points": 750,
+    "image": "image.gif",
+    "animation_url": "",
+    "external_url": "",
+    "collection": {
+       "name": "SpacePepesSOL",
+       "family": "" 
+    },
+    "properties": {
+      "files": [
+        {
+          "uri": "image.gif",
+          "type": "image/gif"
+        }
+      ],
+      "category": "image",
+      "creators": [
+        {
+          "address": "Dr3wk5k5hfhrLvb6JvZMFCBEixAb2mMCmBm8JmY7tuJM",
+          "share": 50,
+          "address": "ETDnXVAyRTLF4bE8UGdpFUsEoBfg1xXkyi1hPF7psJ8N",
+          "share": 50
+        }
+      ]
+    }
+  }
