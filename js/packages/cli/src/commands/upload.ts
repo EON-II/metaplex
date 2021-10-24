@@ -82,8 +82,8 @@ export async function upload(
       const manifestContent = fs
         .readFileSync(manifestPath)
         .toString()
-        .replace(imageName, 'image.png')
-        .replace(imageName, 'image.png');
+        .replace(imageName, 'video.mp4')
+        .replace(imageName, 'video.mp4');
       const manifest = JSON.parse(manifestContent);
 
       const manifestBuffer = Buffer.from(JSON.stringify(manifest));

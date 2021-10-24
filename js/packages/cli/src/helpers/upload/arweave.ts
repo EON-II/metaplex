@@ -52,8 +52,8 @@ export async function arweaveUpload(
   data.append('transaction', tx['txid']);
   data.append('env', env);
   data.append('file[]', fs.createReadStream(image), {
-    filename: `image.png`,
-    contentType: 'image/png',
+    filename: `video.mp4`,
+    contentType: 'video/mp4',
   });
   data.append('file[]', manifestBuffer, 'metadata.json');
 

@@ -1,34 +1,33 @@
 {
-    "name": "Temporal 202",
-    "symbol": "",
-    "description": "Developed by our customized styleGAN algorithm, Temporal is a collection filled with artistic diversity throughout the eras of time.",
-    "seller_fee_basis_points": 500,
-    "image": "image.png",
-    "animation_url": "",
-    "external_url": "",
-    "attributes": [
+  "name": "Temporal 402",
+  "symbol": "",
+  "description": "Developed by our customized styleGAN algorithm, Temporal is a collection filled with artistic diversity throughout the eras of time.",
+  "seller_fee_basis_points": 500,
+  "animation_url": "1.mp4",
+  "external_url": "",
+  "attributes": [
+    {
+      "trait_type": "Art Style",
+      "value": "Horror"
+    }
+  ],
+  "collection": {
+     "name": "Temporal",
+     "family": "" 
+  },
+  "properties": {
+    "files": [
       {
-        "trait_type": "Art Style",
-        "value": "Surrealism"
+        "uri": "1.mp4",
+        "type": "video/mp4"
       }
     ],
-    "collection": {
-       "name": "Temporal",
-       "family": "" 
-    },
-    "properties": {
-      "files": [
-        {
-          "uri": "image.png",
-          "type": "image/png"
-        }
-      ],
-      "category": "image",
-      "creators": [
-        {
-          "address": "CqNxFgMn1n5cjg7HHgLXycUTPMw9GmB9owRjkKVtgYDa",
-          "share": 100
-        }
-      ]
-    }
+    "category": "video",
+    "creators": [
+      {
+        "address": "CqNxFgMn1n5cjg7HHgLXycUTPMw9GmB9owRjkKVtgYDa",
+        "share": 100
+      }
+    ]
   }
+}
