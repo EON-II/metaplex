@@ -1,4 +1,3 @@
-import { EXTENSION_PNG } from '../helpers/constants';
 import path from 'path';
 import {
   createConfig,
@@ -10,6 +9,7 @@ import fs from 'fs';
 import BN from 'bn.js';
 import { loadCache, saveCache } from '../helpers/cache';
 import log from 'loglevel';
+import { awsUpload } from '../helpers/upload/aws';
 import { arweaveUpload } from '../helpers/upload/arweave';
 import { ipfsCreds, ipfsUpload } from '../helpers/upload/ipfs';
 import { chunks } from '../helpers/various';
@@ -22,7 +22,10 @@ export async function upload(
   totalNFTs: number,
   storage: string,
   retainAuthority: boolean,
+  mutable: boolean,
+  imageType: string,
   ipfsCredentials: ipfsCreds,
+  awsS3Bucket: string,
 ): Promise<boolean> {
   let uploadSuccessful = true;
 
@@ -43,20 +46,22 @@ export async function upload(
   const seen = {};
   const newFiles = [];
 
+  const imageExtension = `.${imageType}`;
+
   files.forEach(f => {
-    if (!seen[f.replace(EXTENSION_PNG, '').split('/').pop()]) {
-      seen[f.replace(EXTENSION_PNG, '').split('/').pop()] = true;
+    if (!seen[f.replace(imageExtension, '').split('/').pop()]) {
+      seen[f.replace(imageExtension, '').split('/').pop()] = true;
       newFiles.push(f);
     }
   });
   existingInCache.forEach(f => {
     if (!seen[f]) {
       seen[f] = true;
-      newFiles.push(f + '.png');
+      newFiles.push(f + imageExtension);
     }
   });
 
-  const images = newFiles.filter(val => path.extname(val) === EXTENSION_PNG);
+  const images = newFiles.filter(val => path.extname(val) === imageExtension);
   const SIZE = images.length;
 
   const walletKeyPair = loadWalletKey(keypair);
@@ -69,7 +74,7 @@ export async function upload(
   for (let i = 0; i < SIZE; i++) {
     const image = images[i];
     const imageName = path.basename(image);
-    const index = imageName.replace(EXTENSION_PNG, '');
+    const index = imageName.replace(imageExtension, '');
 
     log.debug(`Processing file: ${i}`);
     if (i % 50 === 0) {
@@ -78,12 +83,13 @@ export async function upload(
 
     let link = cacheContent?.items?.[index]?.link;
     if (!link || !cacheContent.program.uuid) {
-      const manifestPath = image.replace(EXTENSION_PNG, '.json');
+      const manifestPath = image.replace(imageExtension, '.json');
+      const imageFileName = `image${imageExtension}`;
       const manifestContent = fs
         .readFileSync(manifestPath)
         .toString()
-        .replace(imageName, 'image.png')
-        .replace(imageName, 'image.png');
+        .replace(imageName, imageFileName)
+        .replace(imageName, imageFileName);
       const manifest = JSON.parse(manifestContent);
 
       const manifestBuffer = Buffer.from(JSON.stringify(manifest));
@@ -96,7 +102,7 @@ export async function upload(
             maxNumberOfLines: new BN(totalNFTs),
             symbol: manifest.symbol,
             sellerFeeBasisPoints: manifest.seller_fee_basis_points,
-            isMutable: true,
+            isMutable: mutable,
             maxSupply: new BN(0),
             retainAuthority: retainAuthority,
             creators: manifest.properties.creators.map(creator => {
@@ -130,12 +136,15 @@ export async function upload(
               anchorProgram,
               env,
               image,
+              imageType,
               manifestBuffer,
               manifest,
               index,
             );
           } else if (storage === 'ipfs') {
             link = await ipfsUpload(ipfsCredentials, image, manifestBuffer);
+          } else if (storage === 'aws') {
+            link = await awsUpload(awsS3Bucket, image, imageType, manifestBuffer);
           }
 
           if (link) {
