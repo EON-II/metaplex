@@ -1,0 +1,38 @@
+{
+    "program": {
+            "uuid": "GS2EzY",
+            "config": "GS2EzY4QG6FEMnizqhXCjHXD1JEqMQuhXxdKWV9mUmLW",
+            "pubkey": "7CfXEE5FYFo5dkRr283jMmi57XnX7puSJuMMXNkY63Wa"
+        },
+        "items": {
+            "0": {
+                "link": "https://arweave.net/hrEljlC8koxtwz_bUkoGahPuWg_rv7-ZGHsd0dwClOQ",
+                "name": "Temporal Animated",
+                "onChain": true
+            },
+            "1": {
+                "link": "https://arweave.net/7koxjRDaKKFnVPvglHN0wuku4HKn8yNJ1N_zI69Opvw",
+                "name": "Temporal Animated",
+                "onChain": true
+            },
+            "2": {
+                "link": "https://arweave.net/O8GIz7pp49x1TXxtSlPU932GTGs4KCoXMGeVIJbmPQQ",
+                "name": "Temporal Animated",
+                "onChain": true
+            },
+            "3": {
+                "link": "https://arweave.net/6f6I63bE3W4mgAWkwxG1vtIxcep8mTomUBl7XGpYK10",
+                "name": "Temporal 199",
+                "onChain": true
+            },
+            "4": {
+                "link": "https://arweave.net/vW8sIXk92JIhaosFH3FZR6GoYDRHzfLw3J9fm3w6q54",
+                "name": "Temporal 200",
+                "onChain": true
+            }
+        },
+        "env": "mainnet-beta",
+        "cacheName": "temp",
+        "authority": "5jy6KLh3k6uf2aRTiqgNXWaCATtCevs8HbGsnso1VK7Q",
+        "candyMachineAddress": "7CfXEE5FYFo5dkRr283jMmi57XnX7puSJuMMXNkY63Wa"
+    }
